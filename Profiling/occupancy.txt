@@ -1,0 +1,17 @@
+==1039== Profiling application: ./main2
+==1039== Profiling result:
+==1039== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "Tesla P100-PCIE-16GB (0)"
+    Kernel: isInsidePolygon(int, int, int, int, int, int, int, int, int*, int*, int*, int)
+          1                        achieved_occupancy                        Achieved Occupancy    0.920796    0.920796    0.920796
+    Kernel: isInsideTriangle(int, int, int, int, int, int, int*, int*, int*, int)
+       3231                        achieved_occupancy                        Achieved Occupancy    0.079271    0.963061    0.520870
+    Kernel: compactKernel(int*, int*, int*, int*, int*, int, int)\
+          1                        achieved_occupancy                        Achieved Occupancy    0.875308    0.875308    0.875308
+    Kernel: compactKernel2(int*, int*, int*, int*, int*, int)\
+          1                        achieved_occupancy                        Achieved Occupancy    0.829400    0.829400    0.829400
+    Kernel: computeFlagsFromLine(int*, int*, int*, thrust::pair<int, int>, thrust::pair<int, int>, int)
+       3232                        achieved_occupancy                        Achieved Occupancy    0.373181    0.824737    0.513437
+    Kernel: computeDistFromLine(int*, int*, int*, int*, thrust::pair<int, int>, thrust::pair<int, int>, int)
+       3231                        achieved_occupancy                        Achieved Occupancy    0.299188    0.997232    0.558409}
